@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="profile-page">
+        <div class="profile-picture">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+        <div class="daily-task-section">
+         
+            <div class="performance-graph-container">
+                <canvas id="performanceGraph"></canvas>
+                <!-- Performance graph component will be rendered here -->
+            </div>
+        </div>
+        <button id="logoutButton">Logout</button>
+    </div>
+    <!-- FullCalendar JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

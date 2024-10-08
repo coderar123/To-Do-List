@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: #dfe0e072;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%, -50%);
+}
+#newtask {
+    position: relative;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#newtask input {
+    width: 60%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px 0 0 5px; /* Rounded left corner */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+#newtask input:focus {
+    outline: none;
+    border-color: #641e5b;
+}
+#newtask button {
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #533c4f;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    height: 45px;
+    width: 20%;
+    border-radius: 0 5px 5px 0; /* Rounded right corner */
+    font-family: 'Poppins', sans-serif;
+}
+#newtask button#push {
+    width: 15%; /* Adjust width to match the "Modify" button */
+    border-radius: 5px ; /* Rounded corners for "Add" button */
+}
+#newtask button#modify {
+    width: 15%; /* Adjust width to your preference */
+    border-radius: 5px; /* Rounded corners */
+}
+#tasks {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button {
+    background-color: #533c4f;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.task-checkbox {
+    transform: scale(2.0); /* Increase the size of the checkbox */
+    margin-right: 10px; /* Add some space between the checkbox and the task name */
+}

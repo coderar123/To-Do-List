@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        h1 {
+            font-size: 128px;
+            margin-top: 20px; /* Adjust the value as needed */
+        }
+        .profile-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .profile-icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .calendar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: Arial, sans-serif;
+            color: #641e5b; /* Matching font color */
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="profile-icon">
+       <a href="profile.html"> <img src="profile.jpg" alt="f"></a>
+    </div>
+    <font color="#641e5b"><center><h1>Todo list</h1></center></font> 
+    <div class="container">
+        <div id="newtask">
+            <input type="text" id="taskInput" placeholder="Add Tasks">
+            <button id="push">Add</button>
+            <button id="modify">Modify</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
